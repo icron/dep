@@ -12,8 +12,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/golang/dep/internal/fs"
-	"github.com/golang/dep/internal/gps"
+	"github.com/icron/dep/internal/fs"
+	"github.com/icron/dep/internal/gps"
 	"github.com/pelletier/go-toml"
 	"github.com/pkg/errors"
 )
@@ -24,7 +24,7 @@ import (
 var exampleTOML = []byte(`
 # Gopkg.toml example
 #
-# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
+# Refer to https://github.com/icron/dep/blob/master/docs/Gopkg.toml.md
 # for detailed Gopkg.toml documentation.
 #
 # required = ["github.com/user/thing/cmd/thing"]

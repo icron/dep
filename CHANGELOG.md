@@ -27,7 +27,7 @@ Improving performance when updating dependencies with `-update`. (#1175)
 (#1132)
 * gps: Add persistent BoltDB cache (#1098)
 * gps: Increase default subcommand timeout to 30s (#1087)
-* Fix importer [issue](https://github.com/golang/dep/issues/939) where the
+* Fix importer [issue](https://github.com/icron/dep/issues/939) where the
 importer would drop the imported version of a project (#1100)
 * Import analyzer now always uses the same name, fixing the lock mismatch
 immediately after dep init issue (#1099)

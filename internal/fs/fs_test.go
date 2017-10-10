@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep/internal/test"
 	"github.com/pkg/errors"
 )
 

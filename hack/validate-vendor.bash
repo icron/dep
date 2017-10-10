@@ -9,7 +9,7 @@
 set -e -o pipefail
 
 if [ -z "$VALIDATE_UPSTREAM" ]; then
-	VALIDATE_REPO='https://github.com/golang/dep.git'
+	VALIDATE_REPO='https://github.com/icron/dep.git'
 	VALIDATE_BRANCH='master'
 
 	VALIDATE_HEAD="$(git rev-parse --verify HEAD)"

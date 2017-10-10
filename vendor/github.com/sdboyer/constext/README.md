@@ -39,7 +39,7 @@ While the unary model of context works well for the original vision - an object
 operating within an [HTTP] request's scope - there are times when we need a
 little more.
 
-For example: in [dep](https://github.com/golang/dep), the subsystem that
+For example: in [dep](https://github.com/icron/dep), the subsystem that
 manages interaction with source repositories is called a
 [`SourceManager`](https://godoc.org/github.com/sdboyer/gps#SourceManager). It
 is a long-lived object; generally, only one is created over the course of any

@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/boltdb/bolt"
-	"github.com/golang/dep/internal/gps/internal/pb"
-	"github.com/golang/dep/internal/gps/pkgtree"
+	"github.com/icron/dep/internal/gps/internal/pb"
+	"github.com/icron/dep/internal/gps/pkgtree"
 	"github.com/golang/protobuf/proto"
 	"github.com/jmank88/nuts"
 	"github.com/pkg/errors"

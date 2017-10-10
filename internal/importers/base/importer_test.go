@@ -8,10 +8,10 @@ import (
 	"log"
 	"testing"
 
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/importers/importertest"
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/importers/importertest"
+	"github.com/icron/dep/internal/test"
 )
 
 func TestBaseImporter_IsTag(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/dep/internal/gps/pkgtree"
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep/internal/gps/pkgtree"
+	"github.com/icron/dep/internal/test"
 )
 
 // TestBadSolveOpts exercises the different possible inputs to a solver that can

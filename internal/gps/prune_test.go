@@ -9,7 +9,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep/internal/test"
 )
 
 func TestPruneUnusedPackages(t *testing.T) {

@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/importers/importertest"
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/importers/importertest"
+	"github.com/icron/dep/internal/test"
 	"github.com/pkg/errors"
 )
 

@@ -5,7 +5,7 @@
 package gps
 
 import (
-	"github.com/golang/dep/internal/gps/pkgtree"
+	"github.com/icron/dep/internal/gps/pkgtree"
 )
 
 // A multiCache manages two cache levels, ephemeral in-memory and persistent on-disk.

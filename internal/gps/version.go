@@ -9,7 +9,7 @@ import (
 	"sort"
 
 	"github.com/Masterminds/semver"
-	"github.com/golang/dep/internal/gps/internal/pb"
+	"github.com/icron/dep/internal/gps/internal/pb"
 )
 
 // VersionType indicates a type for a Version that conveys some additional

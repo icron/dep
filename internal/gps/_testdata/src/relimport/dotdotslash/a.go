@@ -5,7 +5,7 @@
 package dotslash
 
 import (
-	"../github.com/golang/dep/internal/gps"
+	"../github.com/icron/dep/internal/gps"
 )
 
 var (

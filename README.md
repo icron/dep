@@ -10,20 +10,20 @@
 
 `dep` is a prototype dependency management tool for Go. It requires Go 1.8 or newer to compile.
 
-`dep` is the official _experiment_, but not yet the official tool. Check out the [Roadmap](https://github.com/golang/dep/wiki/Roadmap) for more on what this means!
+`dep` is the official _experiment_, but not yet the official tool. Check out the [Roadmap](https://github.com/icron/dep/wiki/Roadmap) for more on what this means!
 
 ## Current status
 
 `dep` is safe for production use. That means two things:
 
 * Any valid metadata file (`Gopkg.toml` and `Gopkg.lock`) will be readable and considered valid by any future version of `dep`.
-* The CLI UI is mostly stable. `dep init` and `dep ensure` are mostly set; `dep status` is likely to change a fair bit, and `dep prune` is [going to be absorbed into `dep ensure`](https://github.com/golang/dep/issues/944).
+* The CLI UI is mostly stable. `dep init` and `dep ensure` are mostly set; `dep status` is likely to change a fair bit, and `dep prune` is [going to be absorbed into `dep ensure`](https://github.com/icron/dep/issues/944).
 
 That said, keep in mind the following:
 
 * `dep init` on an existing project can be a rocky experience - we try to automatically convert from other tools' metadata files, and that process is often complex and murky. Once your project is converted and you're using `dep ensure`, its behavior is quite stable.
 * `dep` still has nasty bugs, but in general these are comparable or fewer to other tools out there.
-* `dep` is [pretty slow right now](https://github.com/golang/dep/blob/master/docs/FAQ.md#why-is-dep-slow), especially on the first couple times you run it. Just know that there is a _lot_ of headroom for improvement, and work is actively underway.
+* `dep` is [pretty slow right now](https://github.com/icron/dep/blob/master/docs/FAQ.md#why-is-dep-slow), especially on the first couple times you run it. Just know that there is a _lot_ of headroom for improvement, and work is actively underway.
 * `dep` is still changing rapidly. If you need stability (e.g. for CI), it's best to rely on a released version, not tip.
 * `dep`'s exported API interface will continue to change in unpredictable, backwards-incompatible ways until we tag a v1.0.0 release.
 
@@ -39,7 +39,7 @@ That said, keep in mind the following:
 
 ## Setup
 
-Grab the latest binary from the [releases](https://github.com/golang/dep/releases) page.
+Grab the latest binary from the [releases](https://github.com/icron/dep/releases) page.
 
 On macOS you can install or upgrade to the latest released version with Homebrew:
 
@@ -51,7 +51,7 @@ $ brew upgrade dep
 If you're interested in hacking on `dep`, you can install via `go get`:
 
 ```sh
-go get -u github.com/golang/dep/cmd/dep
+go get -u github.com/icron/dep/cmd/dep
 ```
 
 To start managing dependencies using dep, run the following from your project's root directory:
@@ -81,7 +81,7 @@ In essence, `dep ensure` [works in two phases to keep four buckets of state in s
 <img width="463" alt="states-flow" src="https://user-images.githubusercontent.com/21599/29223886-22dd2578-7e96-11e7-8b51-3637b9ddc715.png">
 
 
-_Note: until we ship [vendor verification](https://github.com/golang/dep/issues/121), we can't efficiently perform the `Gopkg.lock` <-> `vendor/` comparison, so `dep ensure` unconditionally regenerates all of `vendor/` to be safe._
+_Note: until we ship [vendor verification](https://github.com/icron/dep/issues/121), we can't efficiently perform the `Gopkg.lock` <-> `vendor/` comparison, so `dep ensure` unconditionally regenerates all of `vendor/` to be safe._
 
 `dep ensure` is safe to run early and often. See the help text for more detailed
 usage instructions.
@@ -94,7 +94,7 @@ $ dep help ensure
 
 (if your `vendor/` directory isn't [checked in with your code](docs/FAQ.md#should-i-commit-my-vendor-directory))
 
-<!-- may change with https://github.com/golang/dep/pull/489 -->
+<!-- may change with https://github.com/icron/dep/pull/489 -->
 
 ```sh
 $ dep ensure

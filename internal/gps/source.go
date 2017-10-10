@@ -10,7 +10,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/golang/dep/internal/gps/pkgtree"
+	"github.com/icron/dep/internal/gps/pkgtree"
 	"github.com/pkg/errors"
 )
 

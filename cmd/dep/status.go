@@ -16,10 +16,10 @@ import (
 	"sync"
 	"text/tabwriter"
 
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/gps/paths"
-	"github.com/golang/dep/internal/gps/pkgtree"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/gps/paths"
+	"github.com/icron/dep/internal/gps/pkgtree"
 	"github.com/pkg/errors"
 )
 

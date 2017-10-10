@@ -13,8 +13,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/test"
 )
 
 func TestReadManifest(t *testing.T) {
@@ -31,7 +31,7 @@ func TestReadManifest(t *testing.T) {
 	c, _ := gps.NewSemverConstraint("^0.12.0")
 	want := Manifest{
 		Constraints: map[gps.ProjectRoot]gps.ProjectProperties{
-			gps.ProjectRoot("github.com/golang/dep/internal/gps"): {
+			gps.ProjectRoot("github.com/icron/dep/internal/gps"): {
 				Constraint: c,
 			},
 			gps.ProjectRoot("github.com/babble/brook"): {
@@ -39,8 +39,8 @@ func TestReadManifest(t *testing.T) {
 			},
 		},
 		Ovr: map[gps.ProjectRoot]gps.ProjectProperties{
-			gps.ProjectRoot("github.com/golang/dep/internal/gps"): {
-				Source:     "https://github.com/golang/dep/internal/gps",
+			gps.ProjectRoot("github.com/icron/dep/internal/gps"): {
+				Source:     "https://github.com/icron/dep/internal/gps",
 				Constraint: gps.NewBranch("master"),
 			},
 		},
@@ -66,14 +66,14 @@ func TestWriteManifest(t *testing.T) {
 	want := h.GetTestFileString(golden)
 	c, _ := gps.NewSemverConstraint("^0.12.0")
 	m := NewManifest()
-	m.Constraints[gps.ProjectRoot("github.com/golang/dep/internal/gps")] = gps.ProjectProperties{
+	m.Constraints[gps.ProjectRoot("github.com/icron/dep/internal/gps")] = gps.ProjectProperties{
 		Constraint: c,
 	}
 	m.Constraints[gps.ProjectRoot("github.com/babble/brook")] = gps.ProjectProperties{
 		Constraint: gps.Revision("d05d5aca9f895d19e9265839bffeadd74a2d2ecb"),
 	}
-	m.Ovr[gps.ProjectRoot("github.com/golang/dep/internal/gps")] = gps.ProjectProperties{
-		Source:     "https://github.com/golang/dep/internal/gps",
+	m.Ovr[gps.ProjectRoot("github.com/icron/dep/internal/gps")] = gps.ProjectProperties{
+		Source:     "https://github.com/icron/dep/internal/gps",
 		Constraint: gps.NewBranch("master"),
 	}
 	m.Ignored = []string{"github.com/foo/bar"}
@@ -393,7 +393,7 @@ func TestValidateProjectRoots(t *testing.T) {
 			name: "valid project root",
 			manifest: Manifest{
 				Constraints: map[gps.ProjectRoot]gps.ProjectProperties{
-					gps.ProjectRoot("github.com/golang/dep"): {
+					gps.ProjectRoot("github.com/icron/dep"): {
 						Constraint: gps.Any(),
 					},
 				},
@@ -405,7 +405,7 @@ func TestValidateProjectRoots(t *testing.T) {
 			name: "invalid project roots in Constraints and Overrides",
 			manifest: Manifest{
 				Constraints: map[gps.ProjectRoot]gps.ProjectProperties{
-					gps.ProjectRoot("github.com/golang/dep/foo"): {
+					gps.ProjectRoot("github.com/icron/dep/foo"): {
 						Constraint: gps.Any(),
 					},
 					gps.ProjectRoot("github.com/golang/go/xyz"): {
@@ -426,7 +426,7 @@ func TestValidateProjectRoots(t *testing.T) {
 			},
 			wantError: errInvalidProjectRoot,
 			wantWarn: []string{
-				"the name for \"github.com/golang/dep/foo\" should be changed to \"github.com/golang/dep\"",
+				"the name for \"github.com/icron/dep/foo\" should be changed to \"github.com/icron/dep\"",
 				"the name for \"github.com/golang/mock/bar\" should be changed to \"github.com/golang/mock\"",
 				"the name for \"github.com/golang/go/xyz\" should be changed to \"github.com/golang/go\"",
 			},

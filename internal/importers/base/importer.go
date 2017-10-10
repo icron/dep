@@ -7,9 +7,9 @@ package base
 import (
 	"log"
 
-	"github.com/golang/dep"
-	fb "github.com/golang/dep/internal/feedback"
-	"github.com/golang/dep/internal/gps"
+	"github.com/icron/dep"
+	fb "github.com/icron/dep/internal/feedback"
+	"github.com/icron/dep/internal/gps"
 	"github.com/pkg/errors"
 )
 

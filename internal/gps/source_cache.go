@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/golang/dep/internal/gps/pkgtree"
+	"github.com/icron/dep/internal/gps/pkgtree"
 )
 
 // singleSourceCache provides a method set for storing and retrieving data about

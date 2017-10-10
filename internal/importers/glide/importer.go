@@ -13,10 +13,10 @@ import (
 	"path/filepath"
 
 	"github.com/go-yaml/yaml"
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/fs"
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/importers/base"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/fs"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/importers/base"
 	"github.com/pkg/errors"
 )
 
@@ -153,10 +153,10 @@ func (g *Importer) convert(pr gps.ProjectRoot) (*dep.Manifest, *dep.Lock, error)
 		// Warn
 		if g.Verbose {
 			if pkg.OS != "" {
-				g.Logger.Printf("  The %s package specified an os, but that isn't supported by dep yet, and will be ignored. See https://github.com/golang/dep/issues/291.\n", pkg.Name)
+				g.Logger.Printf("  The %s package specified an os, but that isn't supported by dep yet, and will be ignored. See https://github.com/icron/dep/issues/291.\n", pkg.Name)
 			}
 			if pkg.Arch != "" {
-				g.Logger.Printf("  The %s package specified an arch, but that isn't supported by dep yet, and will be ignored. See https://github.com/golang/dep/issues/291.\n", pkg.Name)
+				g.Logger.Printf("  The %s package specified an arch, but that isn't supported by dep yet, and will be ignored. See https://github.com/icron/dep/issues/291.\n", pkg.Name)
 			}
 		}
 

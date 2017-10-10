@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/test"
 )
 
 func TestFindRoot(t *testing.T) {

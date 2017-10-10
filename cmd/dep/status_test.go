@@ -11,8 +11,8 @@ import (
 
 	"strings"
 
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/gps"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/gps"
 )
 
 func TestStatusFormatVersion(t *testing.T) {

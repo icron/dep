@@ -16,7 +16,7 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/golang/dep"
+	"github.com/icron/dep"
 )
 
 type command interface {

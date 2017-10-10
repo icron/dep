@@ -17,8 +17,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/dep/internal/fs"
-	"github.com/golang/dep/internal/gps/paths"
+	"github.com/icron/dep/internal/fs"
+	"github.com/icron/dep/internal/gps/paths"
 )
 
 // PackageTree.ToReachMap() uses an easily separable algorithm, wmToReach(),
@@ -507,7 +507,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 						},
@@ -527,7 +527,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 						},
@@ -589,7 +589,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 							TestImports: []string{
@@ -613,7 +613,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 							TestImports: []string{
@@ -637,7 +637,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 							TestImports: []string{
@@ -662,7 +662,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -683,7 +683,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 						},
@@ -694,7 +694,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -742,7 +742,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -754,7 +754,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 						},
@@ -774,7 +774,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "base",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"go/parser",
 							},
 						},
@@ -796,7 +796,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -817,7 +817,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "base",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"go/parser",
 							},
 						},
@@ -839,7 +839,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -860,7 +860,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 								"unicode",
 							},
@@ -881,7 +881,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 								"unicode",
 							},
@@ -902,7 +902,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 								"unicode",
 							},
@@ -923,7 +923,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 								"unicode",
 							},
@@ -970,7 +970,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"missing/missing",
 								"sort",
 							},
@@ -982,7 +982,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -1007,7 +1007,7 @@ func TestListPackages(t *testing.T) {
 							Name:        "cycle",
 							Imports: []string{
 								"cycle/one",
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 							},
 						},
 					},
@@ -1018,7 +1018,7 @@ func TestListPackages(t *testing.T) {
 							Name:        "one",
 							Imports: []string{
 								"cycle/two",
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 							},
 						},
 					},
@@ -1029,7 +1029,7 @@ func TestListPackages(t *testing.T) {
 							Name:        "two",
 							Imports: []string{
 								"cycle",
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 							},
 						},
 					},
@@ -1050,7 +1050,7 @@ func TestListPackages(t *testing.T) {
 							Name:        "disallow",
 							Imports: []string{
 								"disallow/testdata",
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 						},
@@ -1118,7 +1118,7 @@ func TestListPackages(t *testing.T) {
 							Dir:        j("relimport/dotdotslash"),
 							ImportPath: "relimport/dotdotslash",
 							LocalImports: []string{
-								"../github.com/golang/dep/internal/gps",
+								"../github.com/icron/dep/internal/gps",
 							},
 						},
 					},
@@ -1137,7 +1137,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "skip",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"sort",
 							},
 						},
@@ -1183,7 +1183,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "simple",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"go/parser",
 								"varied/simple/another",
 							},
@@ -1220,7 +1220,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -1280,7 +1280,7 @@ func TestListPackages(t *testing.T) {
 							CommentPath: "",
 							Name:        "m1p",
 							Imports: []string{
-								"github.com/golang/dep/internal/gps",
+								"github.com/icron/dep/internal/gps",
 								"os",
 								"sort",
 							},
@@ -1462,7 +1462,7 @@ func TestListPackagesNoPerms(t *testing.T) {
 					CommentPath: "",
 					Name:        "m1p",
 					Imports: []string{
-						"github.com/golang/dep/internal/gps",
+						"github.com/icron/dep/internal/gps",
 						"sort",
 					},
 				},
@@ -1556,12 +1556,12 @@ func TestToReachMap(t *testing.T) {
 	// maps of each internal package, and their expected external and internal
 	// imports in the maximal case.
 	allex := map[string][]string{
-		b(""):               {"encoding/binary", "github.com/Masterminds/semver", "github.com/golang/dep/internal/gps", "go/parser", "hash", "net/http", "os", "sort"},
-		b("m1p"):            {"github.com/golang/dep/internal/gps", "os", "sort"},
+		b(""):               {"encoding/binary", "github.com/Masterminds/semver", "github.com/icron/dep/internal/gps", "go/parser", "hash", "net/http", "os", "sort"},
+		b("m1p"):            {"github.com/icron/dep/internal/gps", "os", "sort"},
 		b("namemismatch"):   {"github.com/Masterminds/semver", "os"},
-		b("otherpath"):      {"github.com/golang/dep/internal/gps", "os", "sort"},
-		b("simple"):         {"encoding/binary", "github.com/golang/dep/internal/gps", "go/parser", "hash", "os", "sort"},
-		b("simple/another"): {"encoding/binary", "github.com/golang/dep/internal/gps", "hash", "os", "sort"},
+		b("otherpath"):      {"github.com/icron/dep/internal/gps", "os", "sort"},
+		b("simple"):         {"encoding/binary", "github.com/icron/dep/internal/gps", "go/parser", "hash", "os", "sort"},
+		b("simple/another"): {"encoding/binary", "github.com/icron/dep/internal/gps", "hash", "os", "sort"},
 	}
 
 	allin := map[string][]string{
@@ -1703,7 +1703,7 @@ func TestToReachMap(t *testing.T) {
 		b("")+" encoding/binary",
 		b("simple")+" encoding/binary",
 		b("simple/another")+" encoding/binary",
-		b("otherpath")+" github.com/golang/dep/internal/gps os sort",
+		b("otherpath")+" github.com/icron/dep/internal/gps os sort",
 	)
 
 	// almost the same as previous, but varied just goes away completely
@@ -1713,7 +1713,7 @@ func TestToReachMap(t *testing.T) {
 		b(""),
 		b("simple")+" encoding/binary",
 		b("simple/another")+" encoding/binary",
-		bl("otherpath", "m1p")+" github.com/golang/dep/internal/gps os sort",
+		bl("otherpath", "m1p")+" github.com/icron/dep/internal/gps os sort",
 	)
 	validate()
 
@@ -1744,7 +1744,7 @@ func TestToReachMap(t *testing.T) {
 	}
 	except(
 		// root pkg loses on everything in varied/simple/another and varied/m1p
-		bl("", "simple", "simple/another", "m1p", "otherpath")+" hash encoding/binary go/parser github.com/golang/dep/internal/gps sort",
+		bl("", "simple", "simple/another", "m1p", "otherpath")+" hash encoding/binary go/parser github.com/icron/dep/internal/gps sort",
 		b("otherpath"),
 		b("simple"),
 	)
@@ -1755,7 +1755,7 @@ func TestToReachMap(t *testing.T) {
 	ignore[b("namemismatch")] = true
 	except(
 		// root pkg loses on everything in varied/simple/another and varied/m1p
-		bl("", "simple", "simple/another", "m1p", "otherpath", "namemismatch")+" hash encoding/binary go/parser github.com/golang/dep/internal/gps sort os github.com/Masterminds/semver",
+		bl("", "simple", "simple/another", "m1p", "otherpath", "namemismatch")+" hash encoding/binary go/parser github.com/icron/dep/internal/gps sort os github.com/Masterminds/semver",
 		b("otherpath"),
 		b("simple"),
 		b("namemismatch"),
@@ -1773,7 +1773,7 @@ func TestFlattenReachMap(t *testing.T) {
 	all := []string{
 		"encoding/binary",
 		"github.com/Masterminds/semver",
-		"github.com/golang/dep/internal/gps",
+		"github.com/icron/dep/internal/gps",
 		"go/parser",
 		"hash",
 		"net/http",
@@ -1867,7 +1867,7 @@ func TestFlattenReachMap(t *testing.T) {
 			},
 		},
 		// now drop a more interesting one
-		// we get github.com/golang/dep/internal/gps from m1p, too, so it should still be there
+		// we get github.com/icron/dep/internal/gps from m1p, too, so it should still be there
 		{
 			name:       "ignore simple",
 			expect:     except("go/parser"),
@@ -1927,7 +1927,7 @@ func TestFlattenReachMap(t *testing.T) {
 		// ignore two that should knock out gps
 		{
 			name:       "ignore both importers",
-			expect:     except("sort", "github.com/golang/dep/internal/gps", "go/parser"),
+			expect:     except("sort", "github.com/icron/dep/internal/gps", "go/parser"),
 			isStdLibFn: nil,
 			main:       true,
 			tests:      true,
@@ -1939,12 +1939,12 @@ func TestFlattenReachMap(t *testing.T) {
 		// finally, directly ignore some external packages
 		{
 			name:       "ignore external",
-			expect:     except("sort", "github.com/golang/dep/internal/gps", "go/parser"),
+			expect:     except("sort", "github.com/icron/dep/internal/gps", "go/parser"),
 			isStdLibFn: nil,
 			main:       true,
 			tests:      true,
 			ignore: map[string]bool{
-				"github.com/golang/dep/internal/gps": true,
+				"github.com/icron/dep/internal/gps": true,
 				"go/parser":                          true,
 				"sort":                               true,
 			},
@@ -1961,7 +1961,7 @@ func TestFlattenReachMap(t *testing.T) {
 
 	t.Run("disallowed", testFlattenReachMap(&ptree, &flattenReachMapCase{
 		name:       "disallowed",
-		expect:     []string{"github.com/golang/dep/internal/gps", "hash", "sort"},
+		expect:     []string{"github.com/icron/dep/internal/gps", "hash", "sort"},
 		isStdLibFn: nil,
 		main:       false,
 		tests:      false,

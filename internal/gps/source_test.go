@@ -13,8 +13,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/dep/internal/gps/pkgtree"
-	"github.com/golang/dep/internal/test"
+	"github.com/icron/dep/internal/gps/pkgtree"
+	"github.com/icron/dep/internal/test"
 )
 
 // Executed in parallel by TestSlowVcs

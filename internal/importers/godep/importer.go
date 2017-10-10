@@ -11,9 +11,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/importers/base"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/importers/base"
 	"github.com/pkg/errors"
 )
 

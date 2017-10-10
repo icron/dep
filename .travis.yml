@@ -5,7 +5,7 @@ notifications:
 jobs:
   include:
     - stage: test
-      go_import_path: github.com/golang/dep
+      go_import_path: github.com/icron/dep
       install:
         - go get -u github.com/golang/lint/golint honnef.co/go/tools/cmd/megacheck
         - npm install -g codeclimate-test-reporter
@@ -25,7 +25,7 @@ jobs:
     - &simple-test
       go: 1.8.x
       stage: test
-      go_import_path: github.com/golang/dep
+      go_import_path: github.com/icron/dep
       install: skip
       env:
         - DEPTESTBYPASS501=1
@@ -52,7 +52,7 @@ jobs:
         - go test -race ./...
     - go: 1.9.x
       stage: deploy
-      go_import_path: github.com/golang/dep
+      go_import_path: github.com/icron/dep
       install: skip
       script: skip
       before_deploy:

@@ -7,9 +7,9 @@ package main
 import (
 	"flag"
 
-	"github.com/golang/dep"
-	"github.com/golang/dep/internal/gps"
-	"github.com/golang/dep/internal/gps/pkgtree"
+	"github.com/icron/dep"
+	"github.com/icron/dep/internal/gps"
+	"github.com/icron/dep/internal/gps/pkgtree"
 	"github.com/pkg/errors"
 )
 
